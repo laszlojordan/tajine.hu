@@ -21,7 +21,10 @@
   },
   "scripts": {
     "start": "PORT=3001 react-scripts start",
+    "clean": "rm build node_modules tajine.deploy",
     "build": "react-scripts build",
+    "deploy:staging": "rm -rf tajine.deploy; mkdir tajine.deploy; cp -r build tajine.deploy; cp app.staging.yaml tajine.deploy/app.yaml",
+    "deploy:prod": "rm -rf tajine.deploy; mkdir tajine.deploy; cp -r build tajine.deploy; cp app.prod.yaml tajine.deploy/app.yaml", 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

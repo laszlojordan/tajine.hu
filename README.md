@@ -70,15 +70,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 # Deploy product on Google Cloud
 
 1. $ npm run build
-2. Copy app.yaml and build directory into tajine.deploy dir
+2. $ npm run deploy:prod
 3. $ cd tajine.deploy
 4. $ gcloud app deploy 
 
 # Deploy a version to staging environment
 1. $ npm run build
-2. Copy app.yaml and build directory into tajine.deploy dir
+2. $ npm run deploy:staing
 3. $ cd tajine.deploy
-4. gcloud app deploy --version <span style="color:red">*VERSION_ID*</span> --no-promote
+4. $ gcloud app deploy --version <span style="color:red">*VERSION_ID*</span> --no-promote
 
 After that you can access the staging revision on:
 https://*VERSION_ID*-dot-default-dot-PROJECT_ID.REGION_ID.r.appspot.com
