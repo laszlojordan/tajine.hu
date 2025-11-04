@@ -12,7 +12,7 @@
 # limitations under the License.
 
 # [START gae_quickstart_yaml]
-runtime: nodejs16
+runtime: nodejs22
 env_variables:
   REACT_APP_IS_PRODUCTION: "true"
   REACT_APP_ENV: "staging"

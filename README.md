@@ -76,7 +76,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Deploy a version to staging environment
 1. $ npm run build
-2. $ npm run deploy:staing
+2. $ npm run deploy:staging
 3. $ cd tajine.deploy
 4. $ gcloud app deploy --version <span style="color:red">*VERSION_ID*</span> --no-promote
 
